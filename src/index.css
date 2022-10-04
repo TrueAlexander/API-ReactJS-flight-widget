@@ -3,7 +3,7 @@
 * {
   color: white;
   font-family: "Ubuntu Condensed", sans-serif;
-  font-size: 35px;
+  font-size: 33px;
 }
 
 body {
@@ -23,6 +23,7 @@ header {
   border-radius: 10px;
   padding: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+  transform: scale(0.9);
 }
 
 .departures table {
@@ -32,23 +33,24 @@ header {
 
 
 .departures table div {
-  border: solid 4px rgb(26, 26, 26);
+  border: solid 3px rgb(62, 62, 62);
   background-color: black;
   min-width: 20px;
   height: 40px;
   float: left;
+  text-align: center;
 }
 
 #time {
-  width: 160px;
+  width: 180px;
 }
 
 #destination {
-  width: 700px;
+  width: 900px;
 }
 
 #flight {
-  width: 205px;
+  width: 210px;
 }
 
 #gate {

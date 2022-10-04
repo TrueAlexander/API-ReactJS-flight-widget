@@ -1,10 +1,17 @@
 import TableCell from './TableCell'
 
 const TableRow = ({ flight }) => {
-  
-  const words = Object.values(flight).slice(1)
 
-  console.log(words)
+  const flightLine = {
+    time: flight.departing,
+    destination: flight.destination,
+    flightNumber: flight.flightNumber[0],
+    gate: flight.gate,
+    remarks: flight.status,
+  }
+
+  const words = Object.values(flightLine)
+
   return (
     <tr>
       <td>✈</td>

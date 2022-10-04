@@ -9,17 +9,17 @@ const TableBody = () => {
     fetch('http://localhost:5555/flights')
       .then(response => response.json())
       .then(flights => {
-        setFlights(flights)
+        const data = Object.values(flights)
+        setFlights(data)
       })
       .catch(err => console.log(err))
   }
   useEffect(() => getFlights(), [])
-  
-  console.log(flights)
+
   return (
     <tbody>
-      {flights?.map((flight) => (
-        <TableRow key={flight._id} flight={flight} />
+      {flights?.map((flight, ind) => (
+        <TableRow key={ind} flight={flight} />
       ))}
     </tbody>
   )
