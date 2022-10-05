@@ -3,7 +3,7 @@ import TableCell from './TableCell'
 const TableRow = ({ flight }) => {
 
   const flightLine = {
-    time: flight.departing,
+    time: flight.departing.slice(0, 5),
     destination: flight.destination,
     flightNumber: flight.flightNumber[0],
     gate: flight.gate,
